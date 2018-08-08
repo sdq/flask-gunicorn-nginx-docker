@@ -1,3 +1,7 @@
+.DS_Store
+instance/
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -8,32 +12,32 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+app/env/
+app/build/
+app/develop-eggs/
+app/dist/
+app/downloads/
+app/eggs/
+app/.eggs/
+app/lib/
+app/lib64/
+app/parts/
+app/sdist/
+app/var/
+app/wheels/
+app/*.egg-info/
+app/.installed.cfg
+app/*.egg
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+app/*.manifest
+app/*.spec
 
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+app/pip-log.txt
+app/pip-delete-this-directory.txt
 
 # Unit test / coverage reports
 htmlcov/
@@ -43,9 +47,8 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*.cover
+*,cover
 .hypothesis/
-.pytest_cache/
 
 # Translations
 *.mo
@@ -54,20 +57,19 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 
 # Flask stuff:
-instance/
+app/instance/
 .webassets-cache
 
 # Scrapy stuff:
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+app/docs/_build/
 
 # PyBuilder
-target/
+app/target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -81,24 +83,16 @@ celerybeat-schedule
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# dotenv
 .env
+
+# virtualenv
 .venv
-env/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject
-.spyproject
 
 # Rope project settings
 .ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/

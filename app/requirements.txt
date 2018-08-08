@@ -1,0 +1,11 @@
+flask
+flask-restful
+flask-login
+flask_cors
+Flask-HTTPAuth
+flask-debugtoolbar
+requests
+Flask-Script
+redis
+flask-redis
+Flask-PyMongo
